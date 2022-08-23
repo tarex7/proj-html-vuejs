@@ -7,6 +7,12 @@
       alt="young-architect-woman-on-meeting"
     />
     <div class="content">
+      <div class="d-flex align-items-center">
+        <div class="line me-4"></div>
+        <h5 class="text-white text-uppercase">
+          Always the best way you need it
+        </h5>
+      </div>
       <h1 class="text-white container-xxxl mb-5">
         The best business consulting
       </h1>
@@ -63,6 +69,11 @@ export default {
     font-weight: bold;
     line-height: 100px;
   }
+
+  h5 {
+    letter-spacing: 1.8px;
+    opacity: 0.8;
+  }
   img {
     height: 1150px;
   }
@@ -79,6 +90,11 @@ export default {
       background-color: $third-color;
       color: #fff;
     }
+  }
+  .line {
+    height: 3px;
+    width: 50px;
+    background-color: $secondary-color;
   }
 }
 </style>
