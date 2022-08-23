@@ -10,3 +10,27 @@ $third-color: #f81d39;
 .debug {
   border: 1px red solid;
 }
+
+body {
+  background-color: $primary-color;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+#consultants {
+    height: 900px;
+    padding: 130px 0px;
+
+    .col {
+       width: 50%;
+    }
+
+    p {
+        width: 350px;
+    }
+}
+
+.line-wide {
+    height: 3px;
+    width: 100%;
+    background-color: $secondary-color;
+  }

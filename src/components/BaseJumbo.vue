@@ -43,7 +43,6 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/style.scss";
 .jumbotron {
-  background-color: $primary-color;
   height: 996px;
   overflow: hidden;
   .content {
@@ -91,9 +90,10 @@ export default {
       color: #fff;
     }
   }
+
   .line {
     height: 3px;
-    width: 50px;
+    width: 5%;
     background-color: $secondary-color;
   }
 }
