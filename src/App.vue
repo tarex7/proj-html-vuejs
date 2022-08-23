@@ -21,6 +21,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/scss/style.scss";
 @import "~bootstrap/scss/bootstrap";
+@import "./assets/scss/style.scss";
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap");
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
 </style>

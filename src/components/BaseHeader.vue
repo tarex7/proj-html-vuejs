@@ -41,7 +41,7 @@ nav {
   height: 70px;
   line-height: 60px;
   #logo {
-    width: 120px;
+    width: 110px;
   }
   li {
     list-style: none;
@@ -50,13 +50,13 @@ nav {
   a.hover {
     text-decoration: none;
     text-transform: uppercase;
-    margin: 0 15px;
-    border-top: 6px transparent solid;
+    margin: 0 20px;
+    border-top: 4px transparent solid;
     color: #fff;
     transition: all 0.3s;
     opacity: 0.7;
     &:hover {
-      border-top: 6px #fff solid;
+      border-top: 4px #fff solid;
       opacity: 1;
     }
   }
