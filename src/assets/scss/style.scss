@@ -16,21 +16,87 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
 }
 
+.btn {
+  color: #000;
+  text-transform: uppercase;
+  padding: 20px 60px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border: 0;
+  &:hover {
+    background-color: $third-color;
+    color: #fff;
+  }
+}
+
+.btn-primary {
+  background-color: $secondary-color;
+}
+
+.btn-secondary {
+  background-color: $third-color;
+  color: #fff;
+  &:hover {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}
+
+p {
+  opacity: 0.7;
+  font-size: 1.1rem;
+}
+
 #consultants {
-    height: 900px;
-    padding: 130px 0px;
+  padding: 130px 0px;
 
-    .col {
-       width: 50%;
+  p {
+    width: 400px;
+  }
+}
+
+#about {
+  img {
+    width: 1073px;
+  }
+
+  h2 {
+    font-size: 3.7rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  .banner {
+    position: relative;
+    width: 92%;
+    background-color: $secondary-color;
+    .text {
+      width: 50%;
     }
 
-    p {
-        width: 350px;
+    .btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-radius: 0;
     }
+  }
+}
+
+p {
+  width: 60%;
 }
 
 .line-wide {
-    height: 3px;
-    width: 100%;
-    background-color: $secondary-color;
-  }
+  height: 3px;
+  width: 100%;
+  background-color: $secondary-color;
+}
+
+.line {
+  height: 3px;
+  width: 7%;
+  background-color: $secondary-color;
+}

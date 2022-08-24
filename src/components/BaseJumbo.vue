@@ -13,9 +13,7 @@
           Always the best way you need it
         </h5>
       </div>
-      <h1 class="text-white container-xxxl mb-5">
-        The best business consulting
-      </h1>
+      <h1 class="text-white mb-5">The best business consulting</h1>
       <a href="#" class="btn btn-primary rounded-0 ms-2">Read more</a>
       <a href="#"
         ><svg
@@ -49,7 +47,7 @@ export default {
     position: absolute;
     top: 30%;
     left: 8%;
-    width: 50%;
+    width: 40%;
     .bi-play-fill {
       border: 2px solid #fff;
       border-radius: 50%;
@@ -77,23 +75,9 @@ export default {
     height: 1150px;
   }
 
-  .btn-primary {
-    background-color: #39ffbf;
-    color: #000;
-    text-transform: uppercase;
-    padding: 20px 60px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    border: 0;
-    &:hover {
-      background-color: $third-color;
-      color: #fff;
-    }
-  }
-
   .line {
     height: 3px;
-    width: 5%;
+    width: 7%;
     background-color: $secondary-color;
   }
 }
