@@ -11,6 +11,7 @@
             class="img-fluid"
           />
         </a>
+        <slot></slot>
         <ul class="menu d-flex">
           <li
             class="d-flex align-items-start mt-2"

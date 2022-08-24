@@ -47,19 +47,39 @@ p {
   font-size: 1.1rem;
 }
 
+.bottom-banner {
+  position: relative;
+  margin-top: 200px;
+  .content {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+  }
+}
+
 #consultants {
   padding: 130px 0px;
 
   p {
     width: 400px;
   }
+
+  img {
+    position: absolute;
+    left: 22%;
+    top: 25%;
+  }
 }
 
 #about {
+  height: 1300px;
+
   img {
     width: 1073px;
   }
-
+  p {
+    width: 60%;
+  }
   h2 {
     font-size: 3.7rem;
   }
@@ -85,8 +105,19 @@ p {
   }
 }
 
-p {
-  width: 60%;
+#testimonial {
+  p {
+    width: 90%;
+  }
+}
+
+#blog {
+  .post {
+    right: 0;
+    bottom: -10%;
+    position: absolute;
+    width: 80%;
+  }
 }
 
 .line-wide {
@@ -99,4 +130,12 @@ p {
   height: 3px;
   width: 7%;
   background-color: $secondary-color;
+}
+
+.icon {
+  background-color: #f81d39;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  position: relative;
 }
