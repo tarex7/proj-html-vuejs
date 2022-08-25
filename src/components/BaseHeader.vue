@@ -1,8 +1,10 @@
 .
 <template>
   <div>
-    <header class="container-xxxl">
-      <nav class="d-flex align-items-center justify-content-between">
+    <header>
+      <nav
+        class="d-flex align-items-center justify-content-between container-xxxl"
+      >
         <a href="#">
           <img
             :src="require(`../assets/${logo}`)"
@@ -37,6 +39,7 @@ header {
   top: 0;
   right: 0;
   left: 0;
+  background-color: rgba($color: #000000, $alpha: 0.2);
 }
 nav {
   height: 70px;

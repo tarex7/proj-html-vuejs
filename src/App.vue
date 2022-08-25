@@ -272,12 +272,10 @@
         </div>
       </div>
     </section>
-    <div class="bottom-banner">
-      <img
-        class="mt-5"
-        src="./assets/business-people-working-together-on-project-and-B3MZ4TX.jpg"
-        alt=""
-      />
+    <div
+      :style="{ backgroundImage: `url(${backgroundUrl})` }"
+      class="bottom-banner"
+    >
       <div class="content">
         <h1 class="text-white text-uppercase fw-bold">Let's talk about work</h1>
         <p>
@@ -292,6 +290,7 @@
 <script>
 import BaseHeader from "./components/BaseHeader.vue";
 import BaseJumbo from "./components/BaseJumbo.vue";
+import backgroundUrl from "./assets/business-people-working-together-on-project-and-B3MZ4TX.jpg";
 export default {
   name: "App",
   components: { BaseHeader, BaseJumbo },
@@ -299,6 +298,8 @@ export default {
     return {
       logo: "logotype.png",
       menu: ["Home", "About", "Projects", "Services", "Blog", "Contact"],
+
+      backgroundUrl,
     };
   },
 };
