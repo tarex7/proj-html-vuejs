@@ -3,7 +3,7 @@
   <div>
     <header>
       <nav
-        class="d-flex align-items-center justify-content-between container-xxxl"
+        class="d-flex align-items-center justify-content-between container-cs"
       >
         <a href="#">
           <img

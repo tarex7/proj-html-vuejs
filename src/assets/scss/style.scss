@@ -1,49 +1,12 @@
-$primary-color: #1f1e38;
-$secondary-color: #FFC318;
-$third-color: #f81d39;
-
-.container-xxxl {
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-.debug {
-  border: 1px blue solid;
-}
+@import "utils.scss";
 
 body {
   background-color: $primary-color;
   font-family: "Bai Jamjuree", sans-serif;
 }
 
-.btn {
-  color: #000;
-  text-transform: uppercase;
-  padding: 20px 60px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  border: 0;
-  &:hover {
-    background-color: $third-color;
-    color: #fff;
-  }
-}
-
-.btn-primary {
-  background-color: $secondary-color;
-}
-
-.btn-secondary {
-  background-color: $third-color;
-  color: #fff;
-  &:hover {
-    background-color: $primary-color;
-    color: #fff;
-  }
-}
-
 p {
-  opacity: 0.5;
+  opacity: 0.9;
   font-size: 1.1rem;
 }
 
@@ -53,7 +16,9 @@ p {
   height: 460px;
   .content {
     color: #fff;
-    p {width: 60%;}
+    p {
+      width: 60%;
+    }
   }
 }
 
@@ -109,6 +74,17 @@ p {
   p {
     width: 90%;
   }
+
+  
+
+  .testimonials {
+    &:hover .hidden {
+      opacity: 1;
+    }
+    &:hover p {
+      color: #fff;
+    }
+  }
 }
 
 #blog {
@@ -120,32 +96,40 @@ p {
   }
 }
 
-.line-wide {
-  height: 3px;
-  width: 100%;
-  background-color: $secondary-color;
+.social {
+  a {
+    color: #fff;
+  }
+  svg {
+    margin: 0 10px;
+  }
 }
 
-.line {
-  height: 3px;
-  width: 7%;
-  background-color: $secondary-color;
-}
-
-.icon {
-  background-color: #f81d39;
+.bi-arrow-up {
+  background-color: #fff;
   border-radius: 50%;
-  width: 65px;
-  height: 65px;
-  position: relative;
+  padding: 10px;
+  width: 37px;
+  height: 37px;
 }
 
-.social svg {
-  margin: 0 10px;
+.bg-blue {
+  background-color: $fourth-color;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  border-radius: 50%;
+  margin-left: 20px;
+  cursor: pointer;
 }
-
-.divider {
-  width: 100%;
-  height: 1px;
-  background-color: rgba($color: #fff, $alpha: 0.1);
+.bi-chat {
+  transform: scaleX(-1);
+}
+.arrow {
+  background-color: rgba($color: #555, $alpha: 0.5);
+  padding: 9px;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  cursor: pointer;
 }

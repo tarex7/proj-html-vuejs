@@ -1,9 +1,10 @@
 <template>
   <div>
     <BaseJumbo jumboBackground="jumboBackground"> </BaseJumbo>
-    <BaseHeader class="container-xxxl" :logo="headerLogo" :menu="menu"
+    <BaseHeader class="container" :logo="headerLogo" :menu="menu"
       >ciccio</BaseHeader
     >
+    <!-- Consultants -->
     <section id="consultants" class="bg-white">
       <div class="h-100">
         <div class="offset-2 d-flex align-items-center my-5">
@@ -77,9 +78,9 @@
             </div>
           </div>
         </div>
-        <!--  -->
       </div>
     </section>
+    <!-- About -->
     <section id="about">
       <div class="d-flex">
         <img
@@ -123,16 +124,45 @@
       </div>
       <div class="offset-1"></div>
     </section>
+    <!-- Project -->
     <section id="project">
-      <div class="container-xxxl py-5">
+      <div class="container py-5">
         <div class="d-flex align-items-center">
           <div class="line me-4"></div>
           <h5 class="text-white text-uppercase">Project</h5>
         </div>
-        <div class="row text-white">
+        <div class="text-white d-flex justify-content-between">
           <h1 class="text-uppercase fw-bold w-50">
             Our expert trusted consultants help clients
           </h1>
+          <div class="arrows">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-left arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-right arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
+            </svg>
+          </div>
         </div>
         <div class="row mt-3">
           <div class="col">
@@ -151,9 +181,10 @@
         </div>
       </div>
     </section>
+    <!-- Testimonial -->
     <section id="testimonial">
-      <div class="container-xxxl my-5 py-5">
-        <div class="">
+      <div class="my-5 py-5">
+        <div class="container">
           <div>
             <div class="d-flex align-items-center">
               <div class="line me-4"></div>
@@ -166,50 +197,62 @@
             </div>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col bg-white p-3 d-flex">
-            <div>
-              <div class="p-5">
+        <div class="mt-3">
+          <div class="col bg-white p-3 d-flex offset-1">
+            <div class="testimonials position-relative">
+              <img
+                class="hidden img-fluid"
+                src="./assets/oliver-ragfelt-488196-2.jpg"
+                alt=""
+              />
+              <div class="p-5 debug d-flex flex-column align-items-center">
                 <p class="mb-5">
                   When, while lovely valley teems with vapour around meand
                   eridian sun strikes the upper impenetrable foliage of my
                   trees, and but a thousand unkwown plants are noticed when I
                   hear the buzz of the little
                 </p>
-                <h4 class="m-0 fw-bold">Vera Duncan</h4>
-                <p class="text-muted"><small>Amazon Inc.</small></p>
+                <p class="h2 m-0 fw-bold">Vera Duncan</p>
+                <p>Amazon Inc.</p>
               </div>
             </div>
-            <div>
-              <div class="p-5">
+            <div class="testimonials position-relative">
+              <img
+                class="hidden img-fluid"
+                src="./assets/oliver-ragfelt-488196-unsplash.jpg"
+                alt=""
+              />
+              <div class="p-5 debug d-flex flex-column align-items-center">
                 <p class="mb-5">
                   When, while lovely valley teems with vapour around meand
                   eridian sun strikes the upper impenetrable foliage of my
                   trees, and but a thousand unkwown plants are noticed when I
                   hear the buzz of the little
                 </p>
-                <h4 class="m-0 fw-bold">Vera Duncan</h4>
-                <p class="text-muted"><small>Amazon Inc.</small></p>
+                <p class="h2 m-0 fw-bold">Vera Duncan</p>
+                <p>Amazon Inc.</p>
               </div>
             </div>
-            <div>
-              <div class="p-5">
+            <div class="testimonials position-relative">
+              <img class="hidden img-fluid" src="./assets/12679.jpg" alt="" />
+              <div class="p-5 debug d-flex flex-column align-items-center">
                 <p class="mb-5">
                   When, while lovely valley teems with vapour around meand
                   eridian sun strikes the upper impenetrable foliage of my
                   trees, and but a thousand unkwown plants are noticed when I
                   hear the buzz of the little
                 </p>
-                <h4 class="m-0 fw-bold">Vera Duncan</h4>
-                <p class="text-muted"><small>Amazon Inc.</small></p>
+                <p class="h2 m-0 fw-bold">Vera Duncan</p>
+                <p>Amazon Inc.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Blog -->
     <section id="blog">
-      <div class="container-xxxl my-5 py-5">
+      <div class="container my-5 py-5">
         <div class="">
           <div class="d-flex justify-content-between align-items-center">
             <div>
@@ -223,7 +266,7 @@
                 </h1>
               </div>
             </div>
-            <a href="#" class="btn btn-primary">view all</a>
+            <a href="#" class="btn btn-secondary rounded-0">view all</a>
           </div>
         </div>
         <div class="row mt-3">
@@ -272,6 +315,7 @@
         </div>
       </div>
     </section>
+    <!-- Banner -->
     <div
       :style="{
         backgroundImage: `url(${bannerBackground})`,
@@ -287,9 +331,10 @@
           A wonderful serenity has taken possession far away, behind the word
           mountains
         </p>
-        <a href="#" class="btn btn-primary mt-2">Get started</a>
+        <a href="#" class="btn btn-primary mt-2 rounded-0">Get started</a>
       </div>
     </div>
+    <!-- Footer -->
     <BaseFooter :logo="footerLogo" :menu="menu" />
   </div>
 </template>
