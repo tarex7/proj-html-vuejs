@@ -148,7 +148,7 @@ nav {
   a.hover {
     text-decoration: none;
     text-transform: uppercase;
-    margin: 0 20px;
+    margin: 0 13px;
     border-top: 4px transparent solid;
     color: #fff;
     transition: all 0.3s;

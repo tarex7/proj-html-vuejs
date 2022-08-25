@@ -70,12 +70,48 @@ p {
   }
 }
 
+#project {
+  .col:hover .overlay::after {
+    opacity: 1;
+  }
+
+  .col:hover .overlay-text {
+    opacity: 0.9;
+  }
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: calc(100% - 45px);
+    z-index: 5;
+    opacity: 0;
+  }
+  .overlay::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: rgb(194, 0, 0), $alpha: 0.7);
+    top: 0;
+    left: 0;
+    position: absolute;
+    filter: brightness(1);
+    opacity: 0;
+  }
+  .plus-bg {
+    background-color: $primary-color;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    cursor: pointer;
+  }
+}
+
 #testimonial {
   p {
     width: 90%;
   }
 
-  
+  h1 {float: right;width: 70%;}
 
   .testimonials {
     &:hover .hidden {
@@ -127,9 +163,9 @@ p {
 }
 .arrow {
   background-color: rgba($color: #555, $alpha: 0.5);
-  padding: 9px;
-  width: 30px;
-  height: 30px;
-  margin: 0 5px;
+  padding: 16px;
+  width: 50px;
+  height: 50px;
+  margin: 0 4px;
   cursor: pointer;
 }

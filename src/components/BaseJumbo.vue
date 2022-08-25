@@ -14,14 +14,14 @@
         </h5>
       </div>
       <h1 class="text-white mb-5">The best business consulting</h1>
-      <a href="#" class="btn btn-secondary rounded-0 ms-2">Read more</a>
+      <a href="#" class="btn btn-secondary rounded-0">Read more</a>
       <a href="#"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="12"
           height="12"
           fill="#FFC318 "
-          class="bi bi-play-fill ms-5"
+          class="bi bi-play-fill ms-4"
           viewBox="0 0 16 16"
         >
           <path

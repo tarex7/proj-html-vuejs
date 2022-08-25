@@ -1,9 +1,7 @@
 <template>
   <div>
     <BaseJumbo jumboBackground="jumboBackground"> </BaseJumbo>
-    <BaseHeader class="container" :logo="headerLogo" :menu="menu"
-      >ciccio</BaseHeader
-    >
+    <BaseHeader class="container" :logo="headerLogo" :menu="menu"></BaseHeader>
     <!-- Consultants -->
     <section id="consultants" class="bg-white">
       <div class="h-100">
@@ -120,13 +118,13 @@
             thousand unkwown
           </p>
         </div>
-        <a href="#" class="btn btn-secondary">get started</a>
+        <a href="#" class="btn btn-third">get started</a>
       </div>
       <div class="offset-1"></div>
     </section>
     <!-- Project -->
     <section id="project">
-      <div class="container py-5">
+      <div class="container-cs py-5">
         <div class="d-flex align-items-center">
           <div class="line me-4"></div>
           <h5 class="text-white text-uppercase">Project</h5>
@@ -165,17 +163,77 @@
           </div>
         </div>
         <div class="row mt-3">
-          <div class="col">
+          <div class="col position-relative">
+            <div class="overlay text-white">
+              <div class="d-flex justify-content-between overlay-text">
+                <div>
+                  <h5 class="m-0 fw-bold">Purinky Producys</h5>
+                  <p>uncategorized</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-plus plus-bg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                  />
+                </svg>
+              </div>
+            </div>
             <img class="img-fluid" src="./assets/DRY-1-790x592.jpg" alt="" />
           </div>
-          <div class="col">
+          <div class="col position-relative">
+            <div class="overlay text-white">
+              <div class="d-flex justify-content-between overlay-text">
+                <div>
+                  <h5 class="m-0 fw-bold">Purinky Producys</h5>
+                  <p>uncategorized</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-plus plus-bg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                  />
+                </svg>
+              </div>
+            </div>
             <img
               class="img-fluid"
               src="./assets/221bf0b7-8134-43bb-936a-5acbe42db64a-790x592.jpg"
               alt=""
             />
           </div>
-          <div class="col">
+          <div class="col position-relative">
+            <div class="overlay text-white">
+              <div class="d-flex justify-content-between overlay-text">
+                <div>
+                  <h5 class="m-0 fw-bold">Purinky Producys</h5>
+                  <p>uncategorized</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-plus plus-bg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                  />
+                </svg>
+              </div>
+            </div>
             <img class="img-fluid" src="./assets/z1el4c4p-790x592.jpg" alt="" />
           </div>
         </div>
@@ -184,14 +242,16 @@
     <!-- Testimonial -->
     <section id="testimonial">
       <div class="my-5 py-5">
-        <div class="container">
-          <div>
-            <div class="d-flex align-items-center">
-              <div class="line me-4"></div>
-              <h5 class="text-white text-uppercase">Testimonial</h5>
-            </div>
-            <div class="row text-white">
-              <h1 class="text-uppercase fw-bold w-50">
+        <div class="container-cs">
+          <div
+            class="d-flex offset-6 align-items-center justify-content-between"
+          >
+            <h5 class="text-white text-uppercase">Testimonial</h5>
+            <div class="line"></div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <div class="text-white text-end">
+              <h1 class="text-uppercase fw-bold">
                 What's the customer say about our work
               </h1>
             </div>
@@ -205,14 +265,14 @@
                 src="./assets/oliver-ragfelt-488196-2.jpg"
                 alt=""
               />
-              <div class="p-5 debug d-flex flex-column align-items-center">
+              <div class="p-5 d-flex flex-column align-items-center">
                 <p class="mb-5">
                   When, while lovely valley teems with vapour around meand
                   eridian sun strikes the upper impenetrable foliage of my
                   trees, and but a thousand unkwown plants are noticed when I
                   hear the buzz of the little
                 </p>
-                <p class="h2 m-0 fw-bold">Vera Duncan</p>
+                <p class="h3 m-0 fw-bold">Vera Duncan</p>
                 <p>Amazon Inc.</p>
               </div>
             </div>
@@ -222,27 +282,27 @@
                 src="./assets/oliver-ragfelt-488196-unsplash.jpg"
                 alt=""
               />
-              <div class="p-5 debug d-flex flex-column align-items-center">
+              <div class="p-5 d-flex flex-column align-items-center">
                 <p class="mb-5">
                   When, while lovely valley teems with vapour around meand
                   eridian sun strikes the upper impenetrable foliage of my
                   trees, and but a thousand unkwown plants are noticed when I
                   hear the buzz of the little
                 </p>
-                <p class="h2 m-0 fw-bold">Vera Duncan</p>
+                <p class="h3 m-0 fw-bold">Vera Duncan</p>
                 <p>Amazon Inc.</p>
               </div>
             </div>
             <div class="testimonials position-relative">
               <img class="hidden img-fluid" src="./assets/12679.jpg" alt="" />
-              <div class="p-5 debug d-flex flex-column align-items-center">
+              <div class="p-5 d-flex flex-column align-items-center">
                 <p class="mb-5">
                   When, while lovely valley teems with vapour around meand
                   eridian sun strikes the upper impenetrable foliage of my
                   trees, and but a thousand unkwown plants are noticed when I
                   hear the buzz of the little
                 </p>
-                <p class="h2 m-0 fw-bold">Vera Duncan</p>
+                <p class="h3 m-0 fw-bold">Vera Duncan</p>
                 <p>Amazon Inc.</p>
               </div>
             </div>
@@ -252,7 +312,7 @@
     </section>
     <!-- Blog -->
     <section id="blog">
-      <div class="container my-5 py-5">
+      <div class="container-cs my-5 py-5">
         <div class="">
           <div class="d-flex justify-content-between align-items-center">
             <div>
