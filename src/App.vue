@@ -1,7 +1,7 @@
 <template>
   <div>
-    <BaseJumbo> </BaseJumbo>
-    <BaseHeader class="container-xxxl" :logo="logo" :menu="menu"
+    <BaseJumbo jumboBackground="jumboBackground"> </BaseJumbo>
+    <BaseHeader class="container-xxxl" :logo="headerLogo" :menu="menu"
       >ciccio</BaseHeader
     >
     <section id="consultants" class="bg-white">
@@ -273,33 +273,45 @@
       </div>
     </section>
     <div
-      :style="{ backgroundImage: `url(${backgroundUrl})` }"
-      class="bottom-banner"
+      :style="{
+        backgroundImage: `url(${bannerBackground})`,
+        backgroundPosition: 'center',
+      }"
+      class="bottom-banner d-flex justify-content-center align-items-center p-5"
     >
-      <div class="content">
-        <h1 class="text-white text-uppercase fw-bold">Let's talk about work</h1>
-        <p>
+      <div class="content d-flex flex-column align-items-center mt-5">
+        <h1 class="text-white text-uppercase fw-bold text-center">
+          Let's talk about work
+        </h1>
+        <p class="text-center">
           A wonderful serenity has taken possession far away, behind the word
           mountains
         </p>
+        <a href="#" class="btn btn-primary mt-2">Get started</a>
       </div>
     </div>
+    <BaseFooter :logo="footerLogo" :menu="menu" />
   </div>
 </template>
 
 <script>
 import BaseHeader from "./components/BaseHeader.vue";
+import BaseFooter from "./components/BaseFooter.vue";
 import BaseJumbo from "./components/BaseJumbo.vue";
-import backgroundUrl from "./assets/business-people-working-together-on-project-and-B3MZ4TX.jpg";
+import bannerBackground from "./assets/business-people-working-together-on-project-and-B3MZ4TX.jpg";
+import jumboBackground from "./assets/portrait-of-young-architect-woman-on-meeting-KFZCE3A.jpg";
+
 export default {
   name: "App",
-  components: { BaseHeader, BaseJumbo },
+  components: { BaseHeader, BaseJumbo, BaseFooter },
   data() {
     return {
-      logo: "logotype.png",
+      headerLogo: "logotype.png",
+      footerLogo: "logotype-2-300x50.png",
       menu: ["Home", "About", "Projects", "Services", "Blog", "Contact"],
 
-      backgroundUrl,
+      bannerBackground,
+      jumboBackground,
     };
   },
 };
